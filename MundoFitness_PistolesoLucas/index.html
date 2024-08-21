@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imagenes/Icono.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./main.js"></script>
+    <title>Mundo Fitness</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="imagenes/Icono.png" alt="logo dos personas entrenando" />
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Rutinas en casa</a></li>
+        <li><a href="">Gimnasios</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Carrusel/carrusel3.jpg" alt="" class="img-carrusel" />
+        </div>
+
+        <div class="carousel-item">
+          <img src="Carrusel/carrusel2.jpg" alt="" class="img-carrusel" />
+        </div>
+
+        <div class="carousel-item">
+          <img src="Carrusel/carrusel1.jpg" alt="" class="img-carrusel" />
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="presentacion">
+      <div class="texto">
+        <h1>¿Quienes somos?</h1>
+        <p>
+          En nombre de MundoFitness, no somos simplemente un lugar para hacer
+          ejercicio; somos una comunidad dedicada a tu salud y bienestar. Con
+          nuestra filosofía centrada en el compromiso, la dedicación y la
+          superación personal, estamos aquí para ayudarte a alcanzar y superar tus
+          metas fitness, sin importar cuáles sean. Ya sea que busques mejorar tu
+          condición física, ganar fuerza, perder peso, o simplemente adoptar un
+          estilo de vida más activo y saludable, estamos aquí para apoyarte en
+          cada paso del camino.
+        </p>
+      </div>
+      <div class="imagen">
+        <img src="Imagenes/Imagen_Presentacion.jpg" alt="mujer levantando una pesa">
+      </div>
+    </div>
+
+    <div class="separador">
+      <h1>Nuestros Entrenadores:</h1>
+    </div>
+
+    <div class="contenedor">
+      <div class="noticias">
+        <img src="imagenes/entrenador2.jpg" alt="entrenador jorge ibañez" />
+        <h1>Jorge Ibañez</h1>
+        <div id="contenido1" class="oculto">
+          <p>
+            Jorge Ibañez es un entrenador experto en fuerza y acondicionamiento
+            atlético, con más de dos décadas de experiencia en rehabilitación
+            deportiva. Combina un enfoque científico con motivación para guiar a
+            deportistas hacia su máximo potencial físico.
+          </p>
+        </div>
+        <button
+          onclick="muestra_oculta('contenido1')"
+          class="button-more"
+          form="contenido2"
+        >
+          Leer mas +
+        </button>
+      </div>
+
+      <div class="noticias">
+        <img src="imagenes/entrenadora1.jpg" alt="entrenadora soledad parma" />
+        <h1>Soledad Parma</h1>
+        <div id="contenido2" class="oculto">
+          <p>
+            Soledad Parma es una entrenadora con más de 15 años de experiencia
+            en fitness y bienestar, especializada en entrenamiento funcional y
+            yoga. Es conocida por su enfoque holístico y su capacidad para
+            motivar a sus clientes hacia un estilo de vida equilibrado.
+          </p>
+        </div>
+        <button
+          onclick='muestra_oculta("contenido2")'
+          class="button-more"
+          form="contenido"
+        >
+          Leer mas +
+        </button>
+      </div>
+
+      <div class="noticias">
+        <img src="imagenes/entrenador3.jpg" alt="entrenador juan perez" />
+        <h1>Juan Perez</h1>
+        <div id="contenido3" class="oculto">
+          <p>
+            Juan Perez es un entrenador personal con formación en kinesiología y
+            nutrición deportiva, con más de 10 años de experiencia. Se destaca
+            por su enfoque empático y personalizado, creando rutinas que
+            inspiran a sus clientes a adoptar un estilo de vida saludable y
+            activo.
+          </p>
+        </div>
+        <button
+          onclick="muestra_oculta('contenido3')"
+          class="button-more"
+          form="contenido3"
+        >
+          Leer mas +
+        </button>
+      </div>
+    </div>
+      
+    <div class="box-contacto">
+      <div class="mitad redes" id="CTCS">
+          <h2>Contactos:</h2>
+          <a href="" target="_blank">
+              <img src="imagenes/twitter.png" alt="Twitter" />
+          </a>
+          <a href="" target="_blank">
+              <img src="imagenes/instagram.png" alt="Instagram" />
+          </a>
+          <a href="" target="_blank">
+              <img src="imagenes/facebook.png" alt="Facebook" />
+          </a>
+          <p>Hecho por: Pistoleso, Lucas Emanuel</p>
+      </div>
+
+      <div class="mitad formulario">
+          <h2>Dejanos tu mensaje:</h2>
+          <form class="formulario" action="#" method="post">
+              <input type="text" name="nombre" placeholder="Nombre" required />
+              <input type="email" name="correo" placeholder="Correo electrónico" required />
+              <textarea name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>  
+              <button type="submit">Enviar</button>
+          </form>
+      </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
